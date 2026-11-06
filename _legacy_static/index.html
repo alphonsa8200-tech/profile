@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Simple Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#" class="logo">Simple<span>Site</span></a>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" class="btn btn-outline" aria-label="Toggle theme">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <span class="badge">Welcome to your new website</span>
+        <h1 class="hero-title">Build Something Amazing Today</h1>
+        <p class="hero-subtitle">
+          A clean, modern, and responsive HTML starter template. Ready to customize with your own text, images, and styles.
+        </p>
+        <div class="hero-actions">
+          <a href="#features" class="btn btn-primary">Get Started</a>
+          <a href="#about" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+      <div class="container">
+        <h2 class="section-title">Features</h2>
+        <p class="section-subtitle">Everything you need to launch a fast, lightweight webpage.</p>
+        <div class="grid cards">
+          <div class="card">
+            <div class="card-icon">⚡</div>
+            <h3>Fast & Lightweight</h3>
+            <p>Pure HTML, CSS, and minimal vanilla JavaScript. No bulky frameworks or dependencies required.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">📱</div>
+            <h3>Fully Responsive</h3>
+            <p>Designed mobile-first with flexible flexbox and grid layouts that adapt to any screen size.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🎨</div>
+            <h3>Easy to Customize</h3>
+            <p>Built with CSS custom properties so you can change fonts, colors, and layouts in seconds.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container about-container">
+        <div class="about-text">
+          <h2 class="section-title">About This Template</h2>
+          <p>
+            This website serves as a simple starter foundation. Whether you are building a personal portfolio,
+            a product showcase, or a project landing page, this structure gives you a solid head start.
+          </p>
+          <ul class="feature-list">
+            <li>✔ Dark / Light theme toggle</li>
+            <li>✔ Smooth scrolling navigation</li>
+            <li>✔ Accessible markup and modern styling</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Newsletter Section -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="contact-box">
+          <h2>Get in Touch</h2>
+          <p>Have questions or suggestions? Send a quick message below.</p>
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> SimpleSite. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#home">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
